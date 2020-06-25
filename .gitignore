@@ -1,0 +1,16 @@
+.DS_Store
+data/*/*.txt
+outputs/
+logs/
+results/
+images/
+archive_*/
+debug.ipynb
+__pycache__/
+.idea
+.ipynb_checkpoints
+*/.ipynb_checkpoints
+*.tc.*
+*.tc_backward.*
+*.log
+*.bak
