@@ -87,15 +87,8 @@ CUDA_VISIBLE_DEVICES=<available-gpu-ids> python eval.py data/tsp/tsp10-200_conco
     --width <1/128/1280>
 ```
 
-
-## Resources
-
-- [ArXiv paper](https://arxiv.org/abs/2006.07054)
-- [Blog post on neural combinatorial optimization](http://chaitjo.github.io/neural-combinatorial-optimization/)
-- [TSP datasets generated with Concorde](https://drive.google.com/uc?id=152mpCze-v4d0m9kdsCeVkLdHFkjeDeF5)
-
-
-## :scroll: Citation
+## :scroll: Citations and Resources
+**Citation:**
 ```
 @article{joshi2020learning,
   title={Learning TSP Requires Rethinking Generalization},
@@ -104,6 +97,11 @@ CUDA_VISIBLE_DEVICES=<available-gpu-ids> python eval.py data/tsp/tsp10-200_conco
   year={2020}
 }
 ```
+
+**Resources:**
+- [ArXiv paper](https://arxiv.org/abs/2006.07054)
+- [Blog post on neural combinatorial optimization](http://chaitjo.github.io/neural-combinatorial-optimization/)
+- [TSP datasets generated with Concorde](https://drive.google.com/uc?id=152mpCze-v4d0m9kdsCeVkLdHFkjeDeF5)
 
 **Acknowledgement and Related Work:** Our codebase is a modified clone of [Wouter Kool's excellent repository](https://github.com/wouterkool/attention-learn-to-route) for the paper ["Attention, Learn to Solve Routing Problems!"](https://openreview.net/forum?id=ByxBFsRqYm), and incorporates ideas from the following papers, among others:
 - [W. Kool, H. van Hoof, and M. Welling. Attention, learn to solve routing problems! In International Conference on Learning Representations, 2019.](https://openreview.net/forum?id=ByxBFsRqYm)
