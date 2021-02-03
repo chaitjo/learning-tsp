@@ -21,7 +21,7 @@ Towards a controlled study of **neural combinatorial optimization**, we unify se
 4. **Solution Search:** The predicted probabilities are converted intodiscrete decisions through classical graph search techniques such as greedy search or beam search.
 5. **Policy Learning:** The entire model in trained end-to-end via imitating anoptimal solver (i.e. supervised learning) or through minimizing a cost function (i.e. reinforcement learning).
 
-## :bulb: Constributions
+## :bulb: Contributions
 
 Our findings suggest that learning scale-invariant TSP solvers requires rethinking the status quo of neural combinatorial optimization to **explicitly account for generalization**:
 - The prevalent evaluation paradigm overshadows models' **poor generalization capabilities** by measuring performance on fixed or trivially small TSP sizes.
@@ -87,7 +87,7 @@ CUDA_VISIBLE_DEVICES=<available-gpu-ids> python eval.py data/tsp/tsp10-200_conco
     --width <1/128/1280>
 ```
 
-## :scroll: Citations and Resources
+## :scroll: Citation and Resources
 **Citation:**
 ```
 @article{joshi2020learning,
