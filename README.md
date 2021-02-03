@@ -1,15 +1,15 @@
-# Learning TSP Requires Rethinking Generalization
+# :briefcase: Learning TSP Requires Rethinking Generalization
 
 This repository contains code for the paper [**"Learning TSP Requires Rethinking Generalization"**](https://arxiv.org/abs/2006.07054) by Chaitanya K. Joshi, Quentin Cappart, Louis-Martin Rousseau, Thomas Laurent and Xavier Bresson.
 
-## Overview
+## :newspaper: Overview
 
 - End-to-end training of neural network solvers for combinatorial problems such as the **Travelling Salesman Problem** is intractable and inefficient beyond a few hundreds of nodes. 
 While state-of-the-art Machine Learning approaches perform closely to classical solvers for trivially small sizes, they are **unable to generalize** the learnt policy to larger instances of practical scales.
 - Towards leveraging transfer learning to **solve large-scale TSPs**, this paper identifies inductive biases, model architectures and learning algorithms that promote generalization to instances larger than those seen in training. 
 Our controlled experiments provide the first principled investigation into such **zero-shot generalization**, revealing that extrapolating beyond training data requires rethinking the entire neural combinatorial optimization pipeline, from network layers and learning paradigms to evaluation protocols.
 
-## End-to-end Neural Combinatorial Optimization Pipeline
+## :rocket: End-to-end Neural Combinatorial Optimization Pipeline
 
 Towards a controlled study of **neural combinatorial optimization**, we unify several state-of-the-art architectures and learning paradigms into one experimental pipeline and provide the first principled investigation on zero-shot generalization to large instances.
 
@@ -21,7 +21,7 @@ Towards a controlled study of **neural combinatorial optimization**, we unify se
 4. **Solution Search:** The predicted probabilities are converted intodiscrete decisions through classical graph search techniques such as greedy search or beam search.
 5. **Policy Learning:** The entire model in trained end-to-end via imitating anoptimal solver (i.e. supervised learning) or through minimizing a cost function (i.e. reinforcement learning).
 
-## Constributions
+## :bulb: Constributions
 
 Our findings suggest that learning scale-invariant TSP solvers requires rethinking the status quo of neural combinatorial optimization to **explicitly account for generalization**:
 - The prevalent evaluation paradigm overshadows models' **poor generalization capabilities** by measuring performance on fixed or trivially small TSP sizes.
@@ -31,7 +31,7 @@ Our findings suggest that learning scale-invariant TSP solvers requires rethinki
     
 **We open-source our framework and datasets to encourage the community to go beyond evaluating performance on fixed TSP sizes, develop more expressive and scale-invariant GNNs, as well as study transfer learning for combinatorial problems.**
 
-## Installation
+## :open_file_folder: Installation
 We ran our code on Ubuntu 16.04, using Python 3.6.7, PyTorch 1.2.0 and CUDA 10.0. 
 We highly recommend installation via Anaconda.
 
@@ -57,7 +57,7 @@ tar -xvzf tsp-data.tar.gz ./data/tsp/
 ```
 
 
-## Usage
+## :zap: Usage
 
 For reproducing experiments, we provide a set of scripts for training, finetuning and evaluation in the `/scripts` directory. 
 Pre-trained models for some experiments described in the paper can be found in the `/pretrained` directory.
@@ -95,7 +95,7 @@ CUDA_VISIBLE_DEVICES=<available-gpu-ids> python eval.py data/tsp/tsp10-200_conco
 - [TSP datasets generated with Concorde](https://drive.google.com/uc?id=152mpCze-v4d0m9kdsCeVkLdHFkjeDeF5)
 
 
-## Citation
+## :scroll: Citation
 ```
 @article{joshi2020learning,
   title={Learning TSP Requires Rethinking Generalization},
